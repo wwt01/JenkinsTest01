@@ -5,6 +5,7 @@ import org.apache.commons.math3.analysis.UnivariateFunction;
 import org.apache.commons.math3.exception.MaxCountExceededException;
 import org.apache.commons.math3.exception.NumberIsTooLargeException;
 import org.apache.commons.math3.exception.NumberIsTooSmallException;
+import org.junit.Test;
 
 import static org.testng.Assert.assertTrue;
 
@@ -14,6 +15,7 @@ public class RombergIntegratorTest extends TestCase {
         super.setUp();
     }
 
+    @Test
     public void testDoIntegrate01() {
         try {
             // 定义被积函数
@@ -62,6 +64,7 @@ public class RombergIntegratorTest extends TestCase {
             assertTrue(false);
         }
     }
+    @Test
     public void testDoIntegrate02() {
         try {
             // 定义被积函数
